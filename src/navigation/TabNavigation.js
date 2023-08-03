@@ -1,8 +1,8 @@
+import { Platform } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import routes from "./routes";
 import colors from "style/colors";
 import { HomeIcon, RoomIcon, TaskIcon } from "assets/icons";
-
 import HomeScreen from "screens/home";
 import TasksScreen from "screens/tasks";
 import RoomsScreen from "screens/rooms";
@@ -18,7 +18,7 @@ function TabNavigation() {
         tabBarActiveTintColor: colors.white,
         tabBarInactiveTintColor: colors.primary[500],
         tabBarStyle: {
-          height: 60,
+          height: Platform.OS === "ios" ? 94 : 64,
           backgroundColor: colors.primary[700],
           paddingVertical: 5,
         },

@@ -8,7 +8,7 @@ import MyRooms from "./MyRooms";
 function HomeScreen() {
   return (
     <View
-      className="flex-1 bg-grey-200"
+      className="flex-1 bg-primary-700"
       style={{ paddingTop: styles.statusBarHeight }}
     >
       <StatusBar
@@ -18,7 +18,7 @@ function HomeScreen() {
       />
       <Header label="Home" />
       <ScrollView
-        className="flex-1 px-4 py-6"
+        className="flex-1 px-4 py-6 bg-grey-200"
         showsVerticalScrollIndicator={false}
         showsHorizontalScrollIndicator={false}
       >

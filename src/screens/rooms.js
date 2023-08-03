@@ -11,7 +11,10 @@ const GridScreen = () => {
   );
 
   return (
-    <View className="flex-1" style={{ paddingTop: styles.statusBarHeight }}>
+    <View
+      className="flex-1 bg-primary-700"
+      style={{ paddingTop: styles.statusBarHeight }}
+    >
       <StatusBar
         backgroundColor={colors.primary[700]}
         translucent
